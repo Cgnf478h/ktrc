@@ -1,0 +1,408 @@
+@charset "UTF-8";
+
+/*! ヘッダー */
+
+#h-top,
+#h-top-link .pc-search div,
+#gmenu .submenu li {
+    display: inline-block;
+    min-height: 1%;
+    display: block;
+    *zoom: 1;
+}
+
+#h-top:after,
+#h-top-link .pc-search div:after,
+#gmenu .submenu li:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+}
+
+* html #h-top,
+* html #h-top-link .pc-search div,
+#h-top-link .pc-search * html div,
+* html #gmenu .submenu li {
+    height: 1%;
+}
+
+
+/*----------------------------------
+header
+----------------------------------*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 30px 0 0;
+    background: #fff;
+    box-shadow: 0 1px 2px #d0d8dc;
+}
+
+@media only screen and (max-width: 736px) {
+    header {
+        padding: 0 0 0;
+    }
+}
+
+.compact {
+    border-bottom: 4px solid #22439c;
+}
+
+#h-top {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#h-top p.logo {
+    float: left;
+}
+
+#h-top p.logo a img {
+    height: 50px;
+}
+
+#h-top h1 {
+    float: left;
+}
+
+#h-top .stl02 {
+    margin-top: -13px;
+}
+
+#h-top-link {
+    position: relative;
+    float: right;
+    margin-top: 13px;
+    font-size: 85.71429%;
+    line-height: 1;
+}
+
+#h-top-link ul,
+#h-top-link li {
+    float: left;
+}
+
+#h-top-link li {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #d0d8dc;
+}
+
+
+/*----------------------------------
+gmenu
+----------------------------------*/
+
+#gmenu {
+    width: 960px;
+    margin: 15px auto 0;
+    line-height: 1;
+}
+
+@media only screen and (max-width: 736px) {
+    #gmenu {
+        margin: 0;
+    }
+}
+
+#gmenu li {
+    position: relative;
+    float: left;
+    width: 137px;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 736px) {
+    #gmenu li {
+        width: 90px;
+    }
+}
+
+#gmenu li a {
+    display: block;
+    padding: 10px 0;
+}
+
+@media only screen and (max-width: 736px) {
+    #gmenu li a {
+        font-size: 13px;
+    }
+}
+
+#gmenu .submenu {
+    display: none;
+    display: block;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    border-top: 4px solid #22439c;
+    background: #f0f5f9;
+}
+
+#gmenu .submenu dl {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#gmenu .submenu dt {
+    font-size: 128.57143%;
+    font-weight: bold;
+    text-align: left;
+}
+
+#gmenu .submenu ul {
+    width: 980px;
+    margin: 0 0 0 -20px;
+    letter-spacing: -.40em;
+}
+
+#gmenu .submenu li {
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+    width: 176px;
+    margin: 20px 0 0 20px;
+    text-align: left;
+    *display: inline;
+    *zoom: 1;
+}
+
+#gmenu .submenu li span {
+    display: block;
+    margin-top: 12px;
+    padding-left: 22px;
+    color: #13449d;
+    line-height: 1.4;
+}
+
+#gmenu .submenu li a {
+    display: block;
+    padding: 0;
+    background: none;
+}
+
+#gmenu .submenu li:hover a {
+    color: inherit;
+    background: none;
+}
+
+#gmenu .submenu p {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    font-size: 85.71429%;
+}
+
+#gmenu .submenu p a {
+    display: inline-block;
+    padding: 22px 0 0;
+    color: #22439c;
+    *display: inline;
+    *zoom: 1;
+}
+
+#sp-menu,
+#sp-submenu01,
+#sp-submenu02,
+#sp-menu-btm,
+#sp-select,
+#sp-support,
+#sp-company,
+#sp-reform,
+#sp-catalog,
+#sp-search,
+.sp-close {
+    display: none;
+}
+
+
+/*subMenu*/
+
+#gmenu .submenu {
+    display: none;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    border-top: 4px solid #22439c;
+    background: #f0f5f9;
+}
+
+#gmenu .submenu dl {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#gmenu .submenu dt {
+    font-size: 128.57143%;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1;
+}
+
+#gmenu .submenu dt a {
+    display: inline;
+    padding: 0 0 0 25px;
+    color: #13449d;
+}
+
+#gmenu .submenu dd {
+    margin-top: 22px;
+}
+
+#gmenu .submenu ul {
+    margin: -12px 0 0;
+    letter-spacing: -.40em;
+}
+
+#gmenu .submenu li {
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+    width: 33.3%;
+    margin: 12px 0 0 0;
+    text-align: left;
+    *display: inline;
+    *zoom: 1;
+}
+
+#gmenu .submenu li img,
+#gmenu .submenu li span {
+    float: left;
+}
+
+#gmenu .submenu li img {
+    width: 113px;
+}
+
+#gmenu .submenu li span {
+    display: block;
+    margin: -2px 0 0 10px;
+    padding-left: 22px;
+    color: #13449d;
+    line-height: 1.4;
+}
+
+#gmenu .submenu li a {
+    display: block;
+    padding: 0;
+    background: none;
+}
+
+#gmenu .submenu li:hover a {
+    color: inherit;
+    background: none;
+}
+
+#gmenu .submenu p {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    font-size: 85.71429%;
+}
+
+#gmenu .submenu p a {
+    display: inline-block;
+    padding: 22px 0 0;
+    color: #22439c;
+    *display: inline;
+    *zoom: 1;
+}
+
+.Button1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #ffffff;
+    -webkit-transform: scaleY(.3);
+    transform: scaleY(.3);
+    opacity: 0;
+    transition: all .3s
+}
+
+.Button1:hover {
+    color: #ffffff;
+}
+
+.Button1:hover::before {
+    opacity: 1;
+    background-color: #003366;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+    transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+}
+
+#gmenu li:before {
+    content: " ";
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 1px;
+    height: 25px;
+    margin-top: -7px;
+    background: #dcdcdc;
+}
+
+.wave {
+    opacity: .3;
+    position: absolute;
+    top: 3%;
+    left: 5px;
+    background: #FFFF66;
+    width: 180px;
+    height: 150px;
+    margin-top: -50px;
+    transform-origin: 52% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+}
+
+@media only screen and (max-width: 736px) {
+    .wave {
+        width: 60px;
+        height: 80px;
+        margin-top: -20px;
+        left: 20px;
+    }
+}
+
+.wave.-three {
+    animation: drift 10000ms infinite linear;
+    opacity: .1;
+    background-color: #f0ff66;
+}
+
+.wave.-two {
+    animation: drift 4000ms infinite linear;
+    opacity: .1;
+    background: #FFCC99;
+}
+
+@keyframes drift {
+    from {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(360deg);
+    }
+}
