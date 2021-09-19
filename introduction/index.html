@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="author" content="KRC">
+    <meta name="description" content="駒場東邦鉄道研究部の活動を紹介します。
+">
+    <title>鉄道研究部について|鉄道研究部 駒場東邦中学高等学校</title>
+    <link rel="icon" href="http://krc0.php.xdomain.jp/KRC_files/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="http://krc0.php.xdomain.jp/KRC_files/2021common.css" media="all">
+    <link rel="stylesheet" href="http://krc0.php.xdomain.jp/KRC_files/2021header.css" media="all">
+    <link rel="stylesheet" href="http://krc0.php.xdomain.jp/KRC_files/2021footer.css" media="all">
+    <script type="text/javascript">
+        function docOpen(argNo) {
+            // --------------------------------------------------------------
+            //  文書の開閉
+            // --------------------------------------------------------------
+            var wArea = document.getElementById("area" + argNo);   // 全体の枠
+            var wCheck = document.getElementById("ck" + argNo);     // チェックボックス
+            var wDoc = document.getElementById("doc" + argNo);    // 文書のエリア
+
+            if (wCheck.checked) {
+                // 全体枠高さを文書エリアの高さ＋ボタン高さにする
+                wArea.style.height = parseInt(wDoc.clientHeight + 40) + "px";
+            } else {
+                wArea.style.height = "";
+            }
+        }
+
+    </script>
+    <style type="text/css">
+        .nextReadBox {
+            position: relative;
+            /* relative指定は必須   */
+            overflow: hidden;
+            /* hidden指定は必須     */
+            transition: .9s;
+            /* 開閉の速度           */
+            height: 200px;
+            /* 閉じているときの高さ */
+            padding: 5px 10px;
+            text-align: left;
+            font-size: 13pt;
+            max-width: 960px;
+            margin: auto;
+        }
+
+        .nextReadBox>input {
+            display: none;
+            /* 非表示 */
+        }
+
+        .nextReadBox>label {
+            position: absolute;
+            display: inline-block;
+            box-sizing: border-box;
+            cursor: pointer;
+
+            bottom: 0;
+            /* 左右いっぱいのBOXにグラデーションを付ける */
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: linear-gradient(rgba(0, 0, 127, 0.10),
+                    #00007f 70%);
+            padding-top: 36px;
+            /* 下寄せに文字を配置する */
+            text-align: center;
+            font-size: 17px;
+            color: #ffffff;
+        }
+
+        .nextReadBox>input[type="checkbox"]:checked+label {
+            bottom: 0;
+            /* 左右いっぱいのBOXにグラデーションを付ける */
+            left: 0;
+            right: 0;
+            height: 30px;
+            background: linear-gradient(rgba(0, 0, 127, 0.10),
+                    #00007f 100%);
+            padding-top: 6px;
+            /* 下寄せに文字を配置する */
+            text-align: center;
+            font-size: 17px;
+            color: #ffffff;
+        }
+
+        .nextReadBox>input[type="checkbox"]:not(:checked)+label::after {
+            content: "続きを開く";
+        }
+
+        .nextReadBox>input[type="checkbox"]:checked+label::after {
+            content: "閉じる";
+        }
+    </style>
+
+
+</head>
+
+<body style="overflow: inherit;">
+    <header>
+        <div id="h-top">
+            <p class="logo"><a href="http://krc0.php.xdomain.jp/index.html"><img
+                        src="http://krc0.php.xdomain.jp/KRC_files/logo.png" alt="KTRC"></a></p>
+            <div id="h-top-link">
+                <ul>
+                    <li><a href="http://krc0.php.xdomain.jp/caution.html">ご利用にあたって</a></li>
+                    <li><a href="http://krc0.php.xdomain.jp/map.html">サイトマップ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="gmenu" style="height: auto;">
+            <nav>
+                <ul>
+                    <li><a class="Button1" href="http://krc0.php.xdomain.jp/introduction/">KRCについて</a></li>
+                    <li><a class="Button1" href="http://krc0.php.xdomain.jp/reports/">活動の様子</a></li>
+                    <li><a class="Button1" href="http://krc0.php.xdomain.jp/member.html">内部連絡</a></li>
+                    <li><a class="Button1" href="http://krc0.php.xdomain.jp/help.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="basic1">
+        <br><br><br><br><br><br><br>
+        <p style="text-align: left;">&gt;<a href="../index.html"><em>ホーム</em></a>&gt;<em>鉄道研究部について
+            </em></p>
+        <br>
+        <div class="title1">
+            <p>部長から</p>
+        </div>
+        <div class="nextReadBox" id="area02">
+            <input type="checkbox" id="ck02" onclick="docOpen('02')">
+            <label for="ck02"></label>
+            <div id="doc02">
+                <p>　こんにちは、駒場東邦鉄道研究部の54代部長です。この度は私達のホームページをご覧くださりありがとうございます。</p>
+                <br>
+                <p>　鉄道研究部では、模型班と装飾班に分かれて活動を行っています。</p>
+                <br>
+                <p>　模型班では、文化祭に向けた6畳ほどの大きな模型のレイアウトを製作しています。毎年、模型の土台となる木の枠から作るので、完成した時には大きな達成感と感動を味わうことができます。</p>
+                <p>　装飾班では、文化祭で校門前に掲示する立て看板や、教室内の装飾物、記念撮影ボードを主に製作しています。</p>
+                <br>
+                <p>　年間に行う行事としては、中学1年生を歓迎する目的の春の撮影会や、夏の合宿、文化祭、秋の撮影会、冬の中旅行会があり、夏の合宿は、通常3泊4日で行われ、行き先によっては夜行列車を利用するため3泊5日となります。冬の中旅行会は、2泊3日で、合宿よりも東京から近いエリアに行きます。それぞれ毎年行き先が変わるため、日本の各地を周ることができます。今年度の合宿と中旅行会は、残念ながら中止となりました。
+                </p>
+                <br>
+                <p>　文化祭では、部員が制作したオリジナル切符の配布、シミュレータの体験、模型の運転体験、発車メロディーの操作など、普通の展示だけでなく皆さんが体験できるものを用意しています。文化祭が終わると高校2年生は引退し、次の代にバトンタッチします。そして代替わりしてから最初の行事となるのが秋の撮影会です。今年度の秋の撮影会は、JR総武本線の物井～佐倉間で行われました。
+                </p>
+                <p>　2学期が終わると中旅行会が開催され、年が明け学年が上がると春の撮影会となります。新高校2年生にとっては最後の撮影会です。学年末試験が終わり8月に入ると合宿、そして9月にはまた文化祭です。</p>
+                <br>
+                <p>　最近は色々なことが予定通りに行きませんが、部員たちも皆頑張っていますので、駒場東邦鉄道研究部をよろしくお願いいたします。</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="title1">
+            <p>その他</p>
+        </div>
+
+        <div class="nextReadBox" id="area01">
+            <input type="checkbox" id="ck01" onclick="docOpen('01')">
+            <label for="ck01"></label>
+            <div id="doc01">
+                <p>1.ホームページの作成</p>
+                <br>
+                <p>　このホームページの作成と更新をしております。これは、ホームページは、ソフトなどを用いず、HTML/CSSを用いてコードを記述しています。</p>
+                <p>　駒東の鉄研の活動を、外部の方々にさらに知っていただきたいと考え作成しました。</p>
+                <p>　これからは、部員たちが新しい記事を書いてゆきます。様々な部員たちの、バリエーション豊かな記事を、お楽しみください。</p>
+                <br>
+                <br>
+                <p>2.全国高等学校鉄道模型コンテストの参加</p>
+                <br>
+                <p>　2019年度は、モジュール部門で、ベストプレゼンテーション賞を受賞しました。</p>
+                <p>　</p>
+                <p>　</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="title1">
+            <p>おすすめの記事</p>
+        </div>
+    </div>
+
+    <div class="popular"><iframe src="http://krc0.php.xdomain.jp/KRC_files/popular.html" width="600" height="450"
+            frameborder="0" style="border:0" allowfullscreen allowtransparency="true"></iframe></div>
+    <footer>
+        <div id="f-top">
+            <div class="basic1">
+                <ul>
+                    <li><a class="ga_FooterNavi" href="http://krc0.php.xdomain.jp/caution.html">ご利用にあたって</a></li>
+                    <li><a class="ga_FooterNavi" href="http://krc0.php.xdomain.jp/map.html">サイトマップ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="copyright">
+            <p><small>Komabatoho Railway Club</small></p>
+        </div>
+    </footer>
+</body>
+
+</html>
